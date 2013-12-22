@@ -8,9 +8,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/default.css">
     <script>
+      	var qs = window.location.search;
+	var source = qs.match(/source=(.+)$/)[1]
         var River = River || {};
         River.settings = {
-            url : 'http://static.scripting.com/houston/rivers/iowaRiver3.js',
+            url : '/rivers/' + source + '.js',
             callback : 'onGetRiverStream',
             social : false
         };
