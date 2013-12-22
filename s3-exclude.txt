@@ -1,0 +1,4 @@
+.git*
+README.md
+js/_json-example.js
+s3-exclude.txt
