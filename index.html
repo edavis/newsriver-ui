@@ -9,7 +9,11 @@
     <link rel="stylesheet" href="/css/default.css">
     <script>
       	var qs = window.location.search;
-	var source = qs.match(/source=(.+)$/)[1]
+	if (qs != '') {
+            var source = qs.match(/source=(.+)$/)[1];
+	} else {
+	    var source = 'eric';
+	}
         var River = River || {};
         River.settings = {
             url : '/rivers/' + source + '.js',
